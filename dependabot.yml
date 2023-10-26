@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    update:
+      - package-ecosystem: "maven"
+        directory: "/"
+        schedule:
+          interval: "daily"
+        range:
+          dependency-name: "org.projectlombok:lombok"
+          update-type: "widen"
